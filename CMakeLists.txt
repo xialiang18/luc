@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.16)
 
 set(PROJECT_NAME compile)
 set(LIBRARY_NAME luc)
+set(LUC_ROOT ${CMAKE_CURRENT_SOURCE_DIR})
 
 add_subdirectory(source/luc)
 

@@ -2,13 +2,20 @@
 #define __TOKEN_TOKEN_H
 
 namespace luc {
-    struct token
+
+    enum {
+        TOK_Number,
+        TOK_Add,
+        TOK_Sub,
+        TOK_Mul,
+        TOK_Div,
+    };
+
+    struct Token
     {
         int type;
         int value;
     };
-
-    token next_token(const char *program);
 }
 
 

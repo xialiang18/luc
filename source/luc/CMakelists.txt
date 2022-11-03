@@ -1,5 +1,5 @@
-include_directories(token)
+include_directories(${LUC_ROOT}/source)
 
-file(GLOB_RECURSE SRC token/*.cc)
+file(GLOB_RECURSE SRC token/*.cc lexer/*.cc)
 
 add_library(${LIBRARY_NAME} SHARED ${SRC})

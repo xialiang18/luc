@@ -1,7 +1,11 @@
-#include "luc/token/token.h"
+#include "luc/lexer/lexer.h"
 #include <iostream>
 
 int main() {
-    luc::next_token("world");
     std::cout << "hello" << std::endl;
+    luc::Lexer lex;
+    lex.Init("world");
+    lex.NextToken();
+    lex.NextToken();
+    lex.NextToken();
 }
