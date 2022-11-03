@@ -1,0 +1,5 @@
+include_directories(token)
+
+file(GLOB_RECURSE SRC token/*.cc)
+
+add_library(${LIBRARY_NAME} SHARED ${SRC})
